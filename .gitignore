@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Environment and local data
+.env
+*.db
+*.sqlite3
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Playwright
+/test-results/
+/playwright-report/
+
+# IMPORTANT (Kiroween requirement): the .kiro directory MUST stay visible
+# in the repo to show usage of specs, hooks, and steering. It is
+# intentionally NOT ignored here. Do not add .kiro to this file.
+!.kiro/
+!.kiro/**

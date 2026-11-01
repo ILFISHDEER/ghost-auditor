@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ghost Auditor</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>👻 Ghost Auditor</h1>
+  <p class="tagline">A ghost that possesses your browser and audits your
+     orders, invoices, and payments — with evidence for every claim.</p>
+</header>
+
+<main>
+  <section id="upload-area">
+    <h2>1. Feed the ghost</h2>
+    <label>Orders file (CSV/XLSX)
+      <input type="file" id="orders-file" accept=".csv,.xlsx">
+    </label>
+    <label>Invoices file (CSV/XLSX)
+      <input type="file" id="invoices-file" accept=".csv,.xlsx">
+    </label>
+    <p class="hint">No files? The ghost will use the bundled synthetic
+       sample data and the mock portal instead.</p>
+  </section>
+
+  <section id="summon">
+    <h2>2. Summon</h2>
+    <button id="summon-btn">Summon Ghost</button>
+    <p id="api-status">Checking API…</p>
+  </section>
+
+  <section id="progress">
+    <h2>3. The haunting, live</h2>
+    <!-- TODO: populated from API responses once the backend is implemented -->
+    <ol id="crew-progress">
+      <li data-agent="capture">Capture — waiting</li>
+      <li data-agent="normalize">Normalize — waiting</li>
+      <li data-agent="match">Match — waiting</li>
+      <li data-agent="explain">Explain — waiting</li>
+    </ol>
+  </section>
+
+  <section id="dossier">
+    <h2>4. Exception dossier</h2>
+    <!-- TODO: populated from the /audit response once implemented -->
+    <p class="placeholder">No dossier yet. Summon the ghost to begin the audit.</p>
+    <div id="dossier-list"></div>
+    <p id="ghost-narration"></p>
+    <button id="export-btn" disabled>Export Markdown</button>
+  </section>
+</main>
+
+<footer>
+  <p>Demo data is synthetic and fictional. Scaffold state: only
+     <code>/health</code> works; upload/audit/report are stubs.</p>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

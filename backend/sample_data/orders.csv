@@ -1,0 +1,7 @@
+order_id,supplier,item,qty,unit_price,total,order_date
+PO-1001,Acme Widgets Co,Widget A,50,10.00,500.00,2026-10-05
+PO-1002,Globex Supplies,Gadget B,100,15.00,1500.00,2026-10-08
+PO-1003,Initech Parts,Bolt C,200,25.00,5000.00,2026-10-12
+PO-1004,Umbrella Components,Valve D,20,120.00,2400.00,2026-10-15
+PO-1005,Hooli Hardware,Cable E,300,2.50,750.00,2026-10-20
+PO-1006,Stark Devices,Sensor F,10,85.00,850.00,2026-10-22

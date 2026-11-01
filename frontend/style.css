@@ -1,0 +1,60 @@
+/* Ghost Auditor — dark haunted theme (skeleton) */
+
+:root {
+  --bg: #0e0d1a;
+  --panel: #1a1930;
+  --text: #e8e6f5;
+  --muted: #9a97b8;
+  --accent: #a78bfa;
+  --ghost: #c4b5fd;
+  --border: #3b3866;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+header, main, footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 { color: var(--ghost); }
+
+.tagline, .hint, .placeholder { color: var(--muted); }
+
+section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+label { display: block; margin-bottom: 0.75rem; }
+
+button {
+  background: var(--accent);
+  color: #14121f;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#crew-progress li { margin-bottom: 0.25rem; }
+
+footer { color: var(--muted); font-size: 0.9rem; }

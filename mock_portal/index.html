@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mock Supplier Portal — Ghost Auditor demo</title>
+<style>
+  body { font-family: sans-serif; margin: 2rem; }
+  table { border-collapse: collapse; }
+  th, td { border: 1px solid #999; padding: 0.4rem 0.8rem; text-align: left; }
+</style>
+</head>
+<body>
+<h1>Mock Supplier Portal</h1>
+<p><em>Synthetic demo data only. All suppliers, orders, and amounts are fictional.</em></p>
+<table id="portal-orders">
+  <thead>
+    <tr>
+      <th>Order ID</th><th>Supplier</th><th>Qty Received</th>
+      <th>Portal Amount</th><th>Payment Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>PO-1001</td><td>Acme Widgets Co</td><td>50</td><td>500.00</td><td>paid</td></tr>
+    <tr><td>PO-1002</td><td>Globex Supplies</td><td>90</td><td>1350.00</td><td>paid</td></tr>
+    <tr><td>PO-1003</td><td>Initech Parts</td><td>200</td><td>5500.00</td><td>paid</td></tr>
+    <tr><td>PO-1004</td><td>Umbrella Components</td><td>20</td><td>4800.00</td><td>paid</td></tr>
+    <tr><td>PO-1005</td><td>Hooli Hardware</td><td>0</td><td>0.00</td><td>unpaid</td></tr>
+    <tr><td>PO-1006</td><td>Stark Devices</td><td>10</td><td>850.00</td><td>unpaid</td></tr>
+  </tbody>
+</table>
+<p>Playwright capture target: table <code>#portal-orders</code>.</p>
+</body>
+</html>
