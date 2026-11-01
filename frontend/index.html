@@ -33,7 +33,6 @@
 
   <section id="progress">
     <h2>3. The haunting, live</h2>
-    <!-- TODO: populated from API responses once the backend is implemented -->
     <ol id="crew-progress">
       <li data-agent="capture">Capture — waiting</li>
       <li data-agent="normalize">Normalize — waiting</li>
@@ -44,7 +43,6 @@
 
   <section id="dossier">
     <h2>4. Exception dossier</h2>
-    <!-- TODO: populated from the /audit response once implemented -->
     <p class="placeholder">No dossier yet. Summon the ghost to begin the audit.</p>
     <div id="dossier-list"></div>
     <p id="ghost-narration"></p>
@@ -53,8 +51,8 @@
 </main>
 
 <footer>
-  <p>Demo data is synthetic and fictional. Scaffold state: only
-     <code>/health</code> works; upload/audit/report are stubs.</p>
+  <p>Demo data is synthetic and fictional. Core audit path implemented:
+     upload → audit → dossier → Markdown export.</p>
 </footer>
 
 <script src="/static/app.js"></script>

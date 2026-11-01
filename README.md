@@ -74,8 +74,9 @@ is made up for demonstration. No real company data is included anywhere.
 
 ## Status
 
-Scaffold state (see `backend/main.py`): the `/health` endpoint works.
-`/upload`, `/audit`, and `/report/{run_id}` are clearly-marked stubs —
-they return a `status: "stub"` response and do not pretend to produce
-real audit results. Implementation order lives in
-`.kiro/specs/ghost-auditor/tasks.md`.
+Core audit path implemented: `POST /upload` → `POST /audit` →
+dossier JSON → `GET /report/{run_id}` Markdown export, with sqlite run
+storage. Portal capture runs against the bundled mock portal and
+degrades gracefully to file-only matching when Playwright browsers are
+unavailable. Voice/TTS narration remains optional stretch (see
+`.kiro/specs/ghost-auditor/tasks.md`).
